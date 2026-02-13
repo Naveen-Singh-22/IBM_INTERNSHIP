@@ -1,0 +1,4 @@
+Q1. Develop an HTML webpage to display a college timetable using an HTML table. The table should show days of the week, subjects, time slots, and break periods. Apply table attributes like rowspan, colspan, and borders to improve readability.
+
+
+Q2. Design an HTML form for user login that includes username and password fields. Use HTML5 attributes such as required, placeholder, and type to ensure basic input validation.
