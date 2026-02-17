@@ -2,3 +2,4 @@ Q1. Develop an HTML webpage to display a college timetable using an HTML table. 
 
 
 Q2. Design an HTML form for user login that includes username and password fields. Use HTML5 attributes such as required, placeholder, and type to ensure basic input validation.
+ Have to select project from selected domain. 
