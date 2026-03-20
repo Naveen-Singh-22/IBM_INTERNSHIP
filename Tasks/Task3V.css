@@ -1,0 +1,46 @@
+/* Simple webpage layout styles */
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'sans-serif', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: #4877c9;
+  background-color: #f7f7fa;
+  padding: 32px 0 16px 0;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.paragraph {
+  color: #333;
+  background-color: #ffffffcc;
+  margin: 24px auto;
+  max-width: 600px;
+  font-size: 1.1rem;
+  padding: 18px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(42,82,152,0.08);
+}
+
+.button {
+  display: block;
+  margin: 32px auto 0 auto;
+  padding: 14px 36px;
+  background-color: #2a5298;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(42,82,152,0.12);
+  transition: background 0.2s;
+}
+.button:hover {
+  background-color: #1e3c72;
+}
