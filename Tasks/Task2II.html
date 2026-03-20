@@ -1,7 +1,78 @@
+ <!-- Develop an HTML webpage to display a college timetable using an HTML table. The table should show days of the week, subjects, time slots, and break periods. Apply table attributes like rowspan, colspan, and borders to improve readability. -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>HTML Task 2 II</title>
-    </head>
-    
-</html>
+<html lang="en">
+<head>
+    <title>College Timetable</title>
+</head>
+<body>
+    <h2>College Timetable</h2>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; text-align:center;">
+        <tr>
+            <th rowspan="2">DAY</th>
+            <th colspan="7">Time Slot</th>
+        </tr>
+        <tr>
+            <th>8.15 to 9.15</th>
+            <th>9.15 to 10.15</th>
+            <th>10.30 to 11.30</th>
+            <th>11.30 to 12.30</th>
+            <th>12.30 to 1.30</th>
+            <th>2.00 to 3.00</th>
+            <th>3.00 to 4.00</th>
+        </tr>
+        <tr>
+            <td>MONDAY</td>
+            <td>DE-LN</td>
+            <td>C - AAW</td>
+            <td>LIB</td>
+            <td colspan="2">C-LAB(B4+B6)-RT</td>
+            <td>PPM-MNG</td>
+            <td>M3-GS</td>
+        </tr>
+        <tr>
+            <td>TUESDAY</td>
+            <td>DE-LN</td>
+            <td>C – AAW</td>
+            <td>PPM-MNG</td>
+            <td colspan="2">OS-LAB(B4+B6)-PM</td>
+            <td>CN-PS</td>
+            <td>M3-GS</td>
+        </tr>
+        <tr>
+            <td>WEDNESDAY</td>
+            <td>DE-LN</td>
+            <td>C – AAW</td>
+            <td>PPM-MNG</td>
+            <td>CN-PS</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>THURSDAY</td>
+            <td>DE-LN</td>
+            <td>C - AAW</td>
+            <td>CN-PS</td>
+            <td colspan="2">CN-LAB(B4+B6)-AS</td>
+            <td>PPM-MNG</td>
+            <td>OS-VD</td>
+        </tr>
+        <tr>
+            <td>FRIDAY</td>
+            <td colspan="5"></td>
+            <td>OS-VD</td>
+            <td>M3-GS</td>
+        </tr>
+        <tr>
+            <td>SATURDAY</td>
+            <td colspan="2"></td>
+            <td>OS-VD</td>
+            <td>M3-GS</td>
+            <td>CN-PS</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td colspan="2" style="font-weight:bold;">LUNCH BREAK<br>1.30 to 2.00</td>
+        </tr>
+    </table>
+    </table>
+</body>
