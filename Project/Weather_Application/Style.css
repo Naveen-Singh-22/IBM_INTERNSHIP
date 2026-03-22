@@ -1,3 +1,35 @@
+body.dark-mode {
+    background: #181818 !important;
+    color: #f1f1f1;
+}
+
+.dark-mode .weather-main-card,
+.dark-mode .hourly-forecast-item,
+.dark-mode .daily-forecast-item,
+.dark-mode .cw-detail-card {
+    background: #232323 !important;
+    color: #f1f1f1 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7) !important;
+}
+
+.dark-mode .main-header,
+.dark-mode .footer {
+    background: #181818 !important;
+    color: #f1f1f1 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7) !important;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode button,
+.dark-mode #darkModeToggle {
+    background: #333 !important;
+    color: #f1f1f1 !important;
+    border: 1px solid #444 !important;
+}
+
+.dark-mode a { color: #90caf9 !important; }
+.dark-mode .footer-bottom { color: #bbb !important; }
 .cw-header {
     text-align: left;
     font-size: 1.1rem;

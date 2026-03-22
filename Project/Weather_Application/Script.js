@@ -1,3 +1,33 @@
+// Dark mode toggle functionality
+window.addEventListener('DOMContentLoaded', function() {
+	const darkModeToggle = document.getElementById('darkModeToggle');
+	if (!darkModeToggle) return;
+	const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+	const savedMode = localStorage.getItem('darkMode');
+
+	function setDarkMode(enabled) {
+		if (enabled) {
+			document.body.classList.add('dark-mode');
+			localStorage.setItem('darkMode', 'true');
+			darkModeToggle.textContent = '☀️ Light Mode';
+		} else {
+			document.body.classList.remove('dark-mode');
+			localStorage.setItem('darkMode', 'false');
+			darkModeToggle.textContent = '🌙 Dark Mode';
+		}
+	}
+
+	// Initialize mode on load
+	if (savedMode === 'true' || (savedMode === null && prefersDark)) {
+		setDarkMode(true);
+	} else {
+		setDarkMode(false);
+	}
+
+	darkModeToggle.addEventListener('click', () => {
+		setDarkMode(!document.body.classList.contains('dark-mode'));
+	});
+});
 // Weather API configuration
 const apiKey = "bfb9f09babc79670fd862f7a1c140776"; // Replace with your OpenWeatherMap API key
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
