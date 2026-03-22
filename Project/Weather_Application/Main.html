@@ -2,36 +2,100 @@
 <html lang="en">
 <head>
   
-  <title>Weather Application</title>
+  <title>WeatherX</title>
   <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-  <header>
-    Weather Application
+  <header class="main-header">
+    <div class="logo-title">
+      <span class="logo" style="font-size:2rem;vertical-align:middle;">☀️</span>
+      <span class="brand-title">WeatherX</span>
+    </div>
   </header>
-  <div class="weather-container">
+  <div class="weather-main-card">
+    <h1 class="main-heading">WeatherX</h1>
+    <p class="subtitle">Get real-time weather updates for any city in the world</p>
     <form class="search-bar" id="search">
       <input type="text" id="cityInput" placeholder="Enter city name" required>
-      <button type="submit" id="searchBtn">Search</button>
+      <button type="submit" id="searchBtn" aria-label="Search by city name">
+        <span style="font-size:1.2rem;">🔍</span>
+      </button>
+    </form>
+    <form class="search-bar" id="dropdownSearch" style="margin-bottom:2rem;">
+      <select id="cityDropdown">
+        <option value="">Select a City</option>
+        <option value="New York">New York</option>
+        <option value="London">London</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Paris">Paris</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Dubai">Dubai</option>
+      </select>
+      <button type="submit" id="dropdownBtn" aria-label="Search by dropdown">
+        <span style="font-size:1.2rem;">🔍</span>
+      </button>
     </form>
     <div class="current-weather" id="currentWeather">
-      <div class="weather-main">
-        <img id="weatherIcon" src="" alt="Weather Icon" style="display:none;" />
-        <div class="weather-info">
-          <div id="temperature">Temperature: --°C</div>
-          <div id="humidity">Humidity: --%</div>
-          <div id="wind">Wind Speed: -- m/s</div>
+      <div class="cw-header">
+        <span id="currentDateTime">--</span>
+      </div>
+      <div class="cw-main-row">
+        <div class="cw-temp-block">
+          <span id="mainTemp" class="cw-temp">--°C</span>
+          <div id="feelsLike" class="cw-feels">Feels like --°C</div>
+        </div>
+        <div class="cw-condition-block">
+          <div id="mainCondition" class="cw-condition">--</div>
+          <img id="weatherIcon" src="" alt="Weather Icon" style="display:none;" />
         </div>
       </div>
-      <div id="weatherDescription"></div>
+      <div class="cw-details-row">
+        <div class="cw-detail-card"><span>🌬️</span><div>Wind</div><div id="wind">--</div></div>
+        <div class="cw-detail-card"><span>💧</span><div>Humidity</div><div id="humidity">--</div></div>
+        <div class="cw-detail-card"><span>👁️</span><div>Visibility</div><div id="visibility">--</div></div>
+        <div class="cw-detail-card"><span>🌡️</span><div>Pressure</div><div id="pressure">--</div></div>
+      </div>
     </div>
-    <div class="forecast">
-      <div class="forecast-title">Forecast</div>
-      <div class="forecast-list" id="forecast">
-        <!-- Forecast info will go here -->
+    <div class="hourly-forecast-block">
+      <div class="forecast-title">Hourly Forecast</div>
+      <div class="hourly-forecast-list" id="hourlyForecast">
+        <!-- Hourly forecast info will go here -->
+      </div>
+    </div>
+    <div class="daily-forecast-block">
+      <div class="forecast-title">7-Day Forecast</div>
+      <div class="daily-forecast-list" id="dailyForecast">
+        <!-- 7-day forecast info will go here -->
       </div>
     </div>
   </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-col about-me">
+        <h3>About Me</h3>
+        <p>Providing quality services with passion and commitment in web design and development. I am here to help you grow and succeed online.</p>
+      </div>
+      <div class="footer-col quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Contact</h3>
+        <p>Email: imailnaveenaks@gmail.com</p>
+        <p>Phone: +92 7509609532</p>
+        <p>Address: Indore, Madhya Pradesh, India </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Naveen Singh. All rights reserved.</p>
+    </div>
+  </footer>
   <script src="Script.js"></script>
 </body>
 </html>
