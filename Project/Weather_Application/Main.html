@@ -4,6 +4,8 @@
   
   <title>WeatherX</title>
   <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
   <button id="darkModeToggle" style="position: absolute; top: 20px; right: 20px; z-index: 1000;">🌙 Dark Mode</button>
@@ -58,6 +60,7 @@
         <div class="cw-detail-card"><span>🌡️</span><div>Pressure</div><div id="pressure">--</div></div>
       </div>
     </div>
+    <div id="map"></div>
     <div class="hourly-forecast-block">
       <div class="forecast-title">Hourly Forecast</div>
       <div class="hourly-forecast-list" id="hourlyForecast">

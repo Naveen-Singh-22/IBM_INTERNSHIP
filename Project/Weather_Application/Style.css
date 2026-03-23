@@ -1,3 +1,13 @@
+/* Map container style */
+#map {
+    height: 300px;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    z-index: 1;
+}
 body.dark-mode {
     background: #181818 !important;
     color: #f1f1f1;

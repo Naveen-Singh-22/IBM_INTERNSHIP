@@ -1,3 +1,13 @@
+
+let map;
+
+window.addEventListener('DOMContentLoaded', function() {
+	
+	map = L.map('map').setView([0, 0], 2); // World view
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+});
 // Dark mode toggle functionality
 window.addEventListener('DOMContentLoaded', function() {
 	const darkModeToggle = document.getElementById('darkModeToggle');
@@ -29,7 +39,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	});
 });
 // Weather API configuration
-const apiKey = "bfb9f09babc79670fd862f7a1c140776"; // Replace with your OpenWeatherMap API key
+const apiKey = "bfb9f09babc79670fd862f7a1c140776"; 
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast";
 
@@ -104,6 +114,17 @@ async function getWeather(city) {
 		humidityDiv.textContent = `${data.main.humidity} %`;
 		visibilityDiv.textContent = data.visibility ? `${Math.round(data.visibility / 1000)} km` : '--';
 		pressureDiv.textContent = `${data.main.pressure} mb`;
+
+		// --- Map update ---
+		const lat = data.coord.lat;
+		const lon = data.coord.lon;
+		if (map) {
+			map.setView([lat, lon], 10);
+			if (window.cityMarker) {
+				map.removeLayer(window.cityMarker);
+			}
+			window.cityMarker = L.marker([lat, lon]).addTo(map).bindPopup(`${city}`).openPopup();
+		}
 	} catch (error) {
 		mainCondition.textContent = error.message;
 	}
