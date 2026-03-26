@@ -291,8 +291,7 @@ body {
     box-shadow: 0 4px 32px rgba(0,0,0,0.10);
     padding: 2.5rem 2rem 2rem 2rem;
     margin: 2.5rem auto 2rem auto;
-    width: 100%;
-    max-width: 500px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,6 +400,8 @@ body {
     .footer-col {
         flex: 1 1 200px;
         min-width: 180px;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     .footer-col h3 {
         margin-bottom: 0.7rem;
