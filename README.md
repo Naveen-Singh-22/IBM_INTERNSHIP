@@ -1,62 +1,71 @@
-IBM Internship Front-End Workspace
-This repository contains all internship practice work, including class exercises, assignment tasks, and the main Weather Application project.
+# IBM Internship HTML/CSS Practice Repository
 
-Live Project
-Weather Application (Netlify): https://tangerine-salmiakki-652e42.netlify.app
-Repository Structure
-Folder Description
-1) Classes/
-Contains classwork and practice files created during learning sessions.
+This repository contains internship practice tasks focused on core web development concepts using HTML, CSS, and basic JavaScript.
 
-Class10.html: Practice exercise file from class.
-form.html: HTML form creation and input handling practice.
-index1.html: Basic HTML structure and element practice.
-Task.txt: Notes/instructions related to class activity.
-2) Tasks/
-Contains internship assignment submissions focused on HTML/CSS implementation.
+## Project Overview
 
-Task1.html: Introductory task.
-Task2I.html, Task2II.html: Intermediate tasks.
-Task3I.html, Task3II.html, Task3III.html: Advanced task set (Part I to III).
-Task3IV.html + Task3IV.css: Task with separate stylesheet.
-Task3V.html + Task3V.css: Task with separate stylesheet.
-3) Project/Weather_Application/
-Main mini project developed during internship.
+The work is organized into small task files that demonstrate:
 
-index.html: Weather app layout and UI structure.
-Style.css: Styling, layout, responsiveness, and visual design.
-Script.js: Weather fetching logic, dynamic UI updates, and map integration.
-Weather Application Details
-The Weather Application is the primary project in this repository.
-It is deployed and accessible online.
+- HTML elements and page structure
+- HTML forms and validation attributes
+- Table design using `rowspan` and `colspan`
+- CSS layout, spacing, colors, and styling
+- Basic JavaScript DOM interaction
 
-Features
-Search weather by location/city
-Display weather details dynamically
-Interactive map-based location display
-Responsive front-end behavior
-Open-Source / External Services Used
-Leaflet.js (Open-source interactive map library)
-OpenStreetMap tiles (map data layer via Leaflet)
-Weather API service (for live weather data)
-Netlify (deployment and hosting)
-Tech Stack
-HTML5
-CSS3
-JavaScript (Vanilla JS)
-Leaflet.js
-OpenStreetMap
-Netlify
-How to Run Locally
-Clone the repository
-Open the project in VS Code
+## Folder Structure
 
-Run any HTML file directly in browser, or use Live Server extension
+```
+IBM_INTERNSHIP/
+|- index1.html
+|- form.html
+|- README.md
+|- Task.txt
+|- Classes/
+|  \- Class10.html
+\- Tasks/
+	|- Task1.html
+	|- Task2I.html
+	|- Task2II.html
+	|- Task3I.html
+	|- Task3II.html
+	|- Task3III.html
+	|- Task3IV.html
+	|- Task3IV.css
+	|- Task3V.html
+	\- Task3V.css
+```
 
-For main project, open:
+## Files and Purpose
 
-Deployment
-Hosted on Netlify
-Link: https://tangerine-salmiakki-652e42.netlify.app
-Author
-Created as part of IBM Internship learning, tasks, and project work. 
+- `index1.html`: Demonstrates block vs inline elements (`div`, `p`, `span`).
+- `form.html`: Registration form with different input types.
+- `Classes/Class10.html`: Introductory JavaScript example with DOM update.
+- `Tasks/Task1.html`: Simple personal profile page.
+- `Tasks/Task2I.html`: Login form using HTML5 validation attributes.
+- `Tasks/Task2II.html`: College timetable using table structure with merged cells.
+- `Tasks/Task3I.html`: Card component with spacing (`padding`, `margin`).
+- `Tasks/Task3II.html`: Three-box layout styled with CSS.
+- `Tasks/Task3III.html`: Notification box with border and styling.
+- `Tasks/Task3IV.html` + `Tasks/Task3IV.css`: Welcome section with background image.
+- `Tasks/Task3V.html` + `Tasks/Task3V.css`: Simple webpage layout with styled header, text, and button.
+- `Task.txt`: Task statements/instructions for the internship assignments.
+
+## How to Run
+
+These are static HTML/CSS/JS files. You can run them by either method:
+
+1. Open any `.html` file directly in your browser.
+2. In VS Code, use Live Server (if installed) and open the file in a local server.
+
+## Learning Focus
+
+This repository is suitable for beginners practicing:
+
+- Semantic and structural HTML
+- Form handling fundamentals
+- CSS box model and visual styling
+- Basic DOM manipulation with JavaScript
+
+## Author
+
+Naveen Singh
