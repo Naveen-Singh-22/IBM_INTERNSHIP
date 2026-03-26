@@ -1,7 +1,7 @@
 # IBM Internship HTML/CSS Practice Repository
 
 This repository contains internship practice tasks focused on core web development concepts using HTML, CSS, and basic JavaScript.
-
+##Updated Project Link :tangerine-salmiakki-652e42.netlify.app 
 ## Project Overview
 
 The work is organized into small task files that demonstrate:
