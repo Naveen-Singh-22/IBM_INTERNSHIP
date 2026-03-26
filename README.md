@@ -1,71 +1,60 @@
-# IBM Internship HTML/CSS Practice Repository
 
-This repository contains internship practice tasks focused on core web development concepts using HTML, CSS, and basic JavaScript.
+# IBM Internship Project
 
-## Project Overview
+This repository contains a collection of HTML, CSS, and JavaScript tasks completed as part of an IBM internship learning track, including a deployed Weather Application.
 
-The work is organized into small task files that demonstrate:
+## Live Demo
 
-- HTML elements and page structure
-- HTML forms and validation attributes
-- Table design using `rowspan` and `colspan`
-- CSS layout, spacing, colors, and styling
-- Basic JavaScript DOM interaction
+**Weather Application:** [https://tangerine-salmiakki-652e42.netlify.app](https://tangerine-salmiakki-652e42.netlify.app)
 
-## Folder Structure
+## Project Structure
 
-```
-IBM_INTERNSHIP/
-|- index1.html
-|- form.html
-|- README.md
-|- Task.txt
-|- Classes/
-|  \- Class10.html
-\- Tasks/
-	|- Task1.html
-	|- Task2I.html
-	|- Task2II.html
-	|- Task3I.html
-	|- Task3II.html
-	|- Task3III.html
-	|- Task3IV.html
-	|- Task3IV.css
-	|- Task3V.html
-	\- Task3V.css
-```
+This workspace is organized into three main learning sections:
 
-## Files and Purpose
+- **Classes:** Practice files and class-based exercises.
+- **Tasks:** Individual internship assignment tasks using HTML/CSS.
+- **Weather_Application:** A mini frontend project demonstrating a weather app interface and scripting.
 
-- `index1.html`: Demonstrates block vs inline elements (`div`, `p`, `span`).
-- `form.html`: Registration form with different input types.
-- `Classes/Class10.html`: Introductory JavaScript example with DOM update.
-- `Tasks/Task1.html`: Simple personal profile page.
-- `Tasks/Task2I.html`: Login form using HTML5 validation attributes.
-- `Tasks/Task2II.html`: College timetable using table structure with merged cells.
-- `Tasks/Task3I.html`: Card component with spacing (`padding`, `margin`).
-- `Tasks/Task3II.html`: Three-box layout styled with CSS.
-- `Tasks/Task3III.html`: Notification box with border and styling.
-- `Tasks/Task3IV.html` + `Tasks/Task3IV.css`: Welcome section with background image.
-- `Tasks/Task3V.html` + `Tasks/Task3V.css`: Simple webpage layout with styled header, text, and button.
-- `Task.txt`: Task statements/instructions for the internship assignments.
+## Weather Application
 
-## How to Run
+The Weather Application is the main project module and includes:
 
-These are static HTML/CSS/JS files. You can run them by either method:
+- `index.html` for structure
+- `Style.css` for styling
+- `Script.js` for interactivity and weather logic
 
-1. Open any `.html` file directly in your browser.
-2. In VS Code, use Live Server (if installed) and open the file in a local server.
+### Features
 
-## Learning Focus
+- Clean weather dashboard UI
+- User input handling
+- Dynamic weather output (based on JavaScript logic)
 
-This repository is suitable for beginners practicing:
+### Technologies Used
 
-- Semantic and structural HTML
-- Form handling fundamentals
-- CSS box model and visual styling
-- Basic DOM manipulation with JavaScript
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+## How to Run Locally
+
+1. Clone the repository.
+2. Open the project folder in VS Code.
+3. Open `index.html` in a browser  
+   (or use Live Server in VS Code).
+
+## Learning Goals
+
+- Build strong fundamentals in HTML, CSS, and JavaScript
+- Practice layout and styling techniques
+- Implement interactive frontend behavior
+- Organize multiple tasks/projects in a single repository
+
+## Deployment
+
+The Weather Application is deployed on Netlify:
+
+[https://tangerine-salmiakki-652e42.netlify.app](https://tangerine-salmiakki-652e42.netlify.app)
 
 ## Author
 
-Naveen Singh
+Created as part of IBM Internship practice and project work.
